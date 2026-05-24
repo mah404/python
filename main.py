@@ -132,7 +132,6 @@
 # print(f"Tip Amount: ${tipPercentage}")
 # print(f"Total Amount: ${total}")
 
-
 # Exercise: Write a function that takes in a list of numbers and returns the average of those numbers.
 
 
@@ -170,3 +169,32 @@
 
 # assert greet("hi", "mah variyani") == "hi mah variyani"
 
+
+
+
+##Lists
+
+""" 
+Lists are a collection of items that are ordered and changeable. They are defined by using square brackets [] and can contain any type of data, including other lists. Lists are mutable, which means you can change their content without changing their identity. You can add, remove, or modify items in a list after it has been created. Lists also support indexing and slicing, allowing you to access specific elements or subsets of the list.
+"""
+
+myList = [1, 2, 3, 4, 5]
+print(myList[0])  # Accessing the first element of the list
+
+#methods 
+""" 
+methods are functions that are associated with a particular object. In the case of lists, there are several built-in methods that allow you to manipulate and interact with the list. Some common list methods include:
+
+list.append(x): Adds an item x to the end of the list.
+print(myList) is function 
+"""
+print(myList[2])
+print(myList[-1])
+print(myList[2:5])
+
+print(len(myList))
+
+print('Hi This is Mah variyani'[3:10])
+
+#ساعت 2 و 15 دقیقه هست که  ویدیو رو دادم 
+#https://www.youtube.com/watch?v=B9nFMZIYQl0&t=2048s
