@@ -1,0 +1,17 @@
+1. Liste vs. Dictionary:
+Eine Liste speichert mehrere Werte in einer bestimmten Reihenfolge. Ein Dictionary speichert Daten mit einem Schlüssel, damit man bestimmte Werte leichter finden kann.
+
+2. Warum with open(...)?
+Ich benutze with open(...), weil die Datei danach automatisch geschlossen wird. So muss ich nicht selbst file.close() schreiben.
+
+3. Was bedeutet Modus "a"?
+Der Modus "a" bedeutet, dass neue Daten an das Ende der Datei angehängt werden und der vorhandene Inhalt erhalten bleibt.
+
+4. Was macht try/except?
+Mit try/except kann ich Fehler abfangen. Dadurch läuft das Programm weiter und bricht nicht sofort ab.
+
+5. Warum Funktionen?
+Funktionen helfen mir, den Code übersichtlicher zu machen. Außerdem kann ich denselben Code mehrfach verwenden, ohne ihn immer wieder neu zu schreiben.
+
+6. Bash-Befehl für Suche:
+Der Befehl grep wird verwendet, um nach bestimmten Wörtern oder Texten in Dateien zu suchen. Das ist ähnlich wie eine Suchfunktion in Python.

@@ -37,6 +37,9 @@ def ticket_erstellen():
     # Zusatzaufgabe: Hier frage ich nach der Prioritaet.
     prioritaet = input("Prioritaet (hoch/mittel/niedrig): ")
 
+    # Hier entferne ich Leerzeichen am Anfang und am Ende.
+    prioritaet = prioritaet.strip()
+
     # Zusatzaufgabe: Hier pruefe ich, ob die Prioritaet richtig ist.
     if prioritaet != "hoch" and prioritaet != "mittel" and prioritaet != "niedrig":
         # Hier sage ich, dass die Prioritaet falsch ist.
@@ -46,6 +49,9 @@ def ticket_erstellen():
 
     # Hier fragt das Programm nach dem Status.
     status = input("Status: ")
+
+    # Hier entferne ich Leerzeichen am Anfang und am Ende.
+    status = status.strip()
 
     # Hier pruefe ich, ob Status leer ist.
     if status == "":
@@ -76,6 +82,9 @@ def ticket_erstellen():
 
     # Aufgabe 4: Hier oeffne ich die Datei tickets.txt zum Anhaengen.
     with open("tickets.txt", "a", encoding="utf-8") as file:
+        
+        # opens the file tickets.txt in append mode ("a"), so new data is added to the end of the file without deleting the existing content. The encoding="utf-8" ensures that special characters are saved correctly. The keyword with automatically closes the file after the block of code is finished, and as file creates a variable called file that I can use to write data into the file.
+        
         # Hier schreibe ich den Namen in die Datei.
         print("Name:", ticket["name"], file=file)
         # Hier schreibe ich die Abteilung in die Datei.
@@ -178,6 +187,13 @@ def logdatei_durchsuchen():
         # Hier gehe ich aus der Funktion raus.
         return
 
+    # Hier pruefe ich, ob nichts gefunden wurde.
+    if anzahl == 0:
+        # Hier zeige ich eine klare Nachricht, wenn nichts gefunden wurde.
+        print("Keine passenden Zeilen gefunden.")
+        # Hier gehe ich aus der Funktion raus.
+        return
+
     # Zusatzaufgabe: Hier speichere ich die Suchergebnisse in eine Datei.
     with open("log_suche_ergebnis.txt", "w", encoding="utf-8") as file:
         # Hier gehe ich jede gefundene Zeile durch.
@@ -212,8 +228,26 @@ def menue_anzeigen():
 
 # Zusatzaufgabe: Diese Funktion zeigt eine kleine Statistik.
 def statistik_anzeigen():
-    # Hier zeige ich, wie viele Tickets in der Liste sind.
-    print("Tickets in dieser Sitzung:", len(tickets))
+    # Hier mache ich einen Zaehler fuer die Tickets.
+    anzahl = 0
+
+    # Hier benutze ich try, weil tickets.txt vielleicht fehlt.
+    try:
+        # Hier oeffne ich tickets.txt zum Lesen.
+        with open("tickets.txt", "r", encoding="utf-8") as file:
+            # Hier gehe ich jede Zeile in der Datei durch.
+            for zeile in file:
+                # Hier suche ich nach der Trennlinie von einem Ticket.
+                if zeile.strip() == "---":
+                    # Hier erhoehe ich den Zaehler um 1.
+                    anzahl = anzahl + 1
+    # Hier fange ich den Fehler ab, wenn tickets.txt fehlt.
+    except FileNotFoundError:
+        # Hier bleibt die Anzahl einfach 0.
+        anzahl = 0
+
+    # Hier zeige ich, wie viele Tickets in tickets.txt gespeichert sind.
+    print("Gespeicherte Tickets:", anzahl)
 
 
 # Aufgabe 1 und 9: Hier ist das Hauptprogramm.
@@ -225,6 +259,13 @@ def main():
 
         # Hier fragt das Programm nach der Auswahl.
         auswahl = input("Auswahl: ")
+
+        # Hier pruefe ich, ob der Benutzer einfach Enter gedrueckt hat.
+        if auswahl == "":
+            # Hier erklaere ich, was man eingeben soll.
+            print("Bitte eine Zahl von 1 bis 6 eingeben.")
+            # Hier gehe ich wieder zum Anfang vom Menue.
+            continue
 
         # Hier pruefe ich, ob der Benutzer 1 eingegeben hat.
         if auswahl == "1":
