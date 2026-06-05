@@ -1,0 +1,16 @@
+2026-06-03 08:10:12 INFO Server wurde gestartet
+2026-06-03 08:10:15 INFO Verbindung zur Datenbank erfolgreich
+2026-06-03 08:11:02 WARNING Speicherplatz fast voll
+2026-06-03 08:12:44 ERROR Verbindung zum Druckerserver fehlgeschlagen
+2026-06-03 08:13:01 INFO Benutzer admin hat sich angemeldet
+2026-06-03 08:14:22 ERROR Datei config.yml konnte nicht gelesen werden
+2026-06-03 08:15:10 INFO Backup wurde gestartet
+2026-06-03 08:16:35 WARNING Hohe CPU-Auslastung erkannt
+2026-06-03 08:17:48 ERROR Netzwerkverbindung unterbrochen
+2026-06-03 08:18:03 INFO Benutzer max.mustermann hat sich abgemeldet
+2026-06-03 08:19:27 INFO Update-Prüfung abgeschlossen
+2026-06-03 08:20:11 ERROR Zugriff auf /var/log/auth.log verweigert
+2026-06-03 08:21:09 WARNING Antwortzeit des Servers ist langsam
+2026-06-03 08:22:30 INFO Dienst nginx läuft
+2026-06-03 08:23:45 ERROR Datenbankabfrage fehlgeschlagen
+2026-06-03 08:24:01 INFO Systemcheck beendet

@@ -1,0 +1,65 @@
+Hausaufgabe Python Tag 2 - Aufgabenuebersicht
+
+Aufgabe 1:
+Der Projektordner python_tag2_hausaufgabe wurde erstellt.
+Die Datei support_log_manager.py zeigt ein Konsolenmenue mit while-Schleife.
+
+Aufgabe 2:
+Im Programm gibt es die Liste tickets = [].
+Neue Tickets werden in dieser Liste gespeichert.
+
+Aufgabe 3:
+Ein Ticket wird als Dictionary gespeichert.
+Die Felder sind Name, Abteilung, Problem, Prioritaet, Status und Datum.
+
+Aufgabe 4:
+Jedes neue Ticket wird an tickets.txt angehaengt.
+
+Aufgabe 5:
+Menuepunkt 2 liest tickets.txt und zeigt den Inhalt in der Konsole.
+
+Aufgabe 6:
+Menuepunkt 4 erzeugt server.log.
+Menuepunkt 3 durchsucht server.log nach einem Suchwort.
+
+Aufgabe 7:
+Das Programm ist in Funktionen aufgeteilt:
+ticket_erstellen()
+tickets_anzeigen()
+logdatei_durchsuchen()
+beispiel_logdatei_erzeugen()
+menue_anzeigen()
+
+Aufgabe 8:
+try/except verhindert Abstuerze bei fehlenden Dateien.
+Ungueltige Menueoptionen, leere Suchwoerter und leere Pflichtfelder werden abgefangen.
+
+Aufgabe 9:
+Das fertige Support-Tool enthaelt alle Pflichtfunktionen aus der Abschlussaufgabe.
+
+Zusatzaufgaben:
+ERROR-Zeilen koennen gesucht und gezaehlt werden.
+Gefundene Logzeilen werden in log_suche_ergebnis.txt gespeichert.
+Tickets bekommen automatisch Datum und Uhrzeit.
+Die Prioritaet wird auf hoch, mittel oder niedrig geprueft.
+Menuepunkt 6 zeigt eine einfache Statistik der erstellten Tickets.
+Leere Eingaben werden bei Pflichtfeldern verhindert.
+
+Kontrollfragen:
+1. Liste vs. Dictionary:
+Eine Liste speichert mehrere Werte der Reihe nach. Ein Dictionary speichert Werte mit Schluesseln, zum Beispiel ticket["problem"].
+
+2. Warum with open(...)?
+with open(...) schliesst die Datei automatisch wieder, auch wenn ein Fehler passiert.
+
+3. Was bedeutet Modus "a"?
+"a" bedeutet append. Neue Inhalte werden unten an die Datei angehaengt.
+
+4. Was macht try/except?
+try/except faengt Fehler ab, damit das Programm nicht sofort abstuerzt.
+
+5. Warum Funktionen?
+Funktionen machen groessere Skripte uebersichtlicher und wiederverwendbar.
+
+6. Bash-Befehl fuer Suche:
+Der Bash-Befehl grep ist grob vergleichbar mit dem Durchsuchen einer Datei nach einem Suchwort.
