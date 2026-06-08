@@ -11,7 +11,7 @@ Der Modus "a" bedeutet, dass neue Daten an das Ende der Datei angehängt werden 
 Mit try/except kann ich Fehler abfangen. Dadurch läuft das Programm weiter und bricht nicht sofort ab.
 
 5. Warum Funktionen?
-Funktionen helfen mir, den Code übersichtlicher zu machen. Außerdem kann ich denselben Code mehrfach verwenden, ohne ihn immer wieder neu zu schreiben.
+Funktionen helfen , den Code übersichtlicher zu machen. Außerdem kann ich denselben Code mehrfach verwenden, ohne ihn immer wieder neu zu schreiben.
 
 6. Bash-Befehl für Suche:
 Der Befehl grep wird verwendet, um nach bestimmten Wörtern oder Texten in Dateien zu suchen. Das ist ähnlich wie eine Suchfunktion in Python.

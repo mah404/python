@@ -40,6 +40,8 @@ def ticket_erstellen():
     # Hier entferne ich Leerzeichen am Anfang und am Ende.
     prioritaet = prioritaet.strip()
 
+
+###################################
     # Zusatzaufgabe: Hier pruefe ich, ob die Prioritaet richtig ist.
     if prioritaet != "hoch" and prioritaet != "mittel" and prioritaet != "niedrig":
         # Hier sage ich, dass die Prioritaet falsch ist.
