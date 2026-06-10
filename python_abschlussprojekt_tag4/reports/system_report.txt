@@ -1,0 +1,13 @@
+Systemreport
+========================================
+Datum und Uhrzeit: 2026-06-10 07:24:49
+Aktuelles Arbeitsverzeichnis: C:\Users\mahta\OneDrive\Pictures\Desktop\python\python_abschlussprojekt_tag4
+Projektordner: C:\Users\mahta\OneDrive\Pictures\Desktop\python\python_abschlussprojekt_tag4
+Anzahl Dateien im Projektordner: 9
+
+Log-Zusammenfassung
+ERROR-Eintraege: 2
+WARN-Eintraege: 2
+
+Ergebnis Systembefehl 'cd'
+C:\Users\mahta\OneDrive\Pictures\Desktop\python\python_abschlussprojekt_tag4
